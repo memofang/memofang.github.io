@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div {
+            border: solid 1px red;
+        }
+        
+        span {
+            border: solid 1px red;
+            /*          width: 50px;
+            height: 50px; */
+        }
+        
+        #inlineblock {
+            border: solid 1px red;
+            display: inline-block;
+        }
+        
+        #none {
+            border: solid;
+            /*            display: none;*/
+        }
+        
+        #viz {
+            width: 50px;
+            height: 50px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>block</h1>
+    <div></div>
+
+    <h1>inline</h1>
+    <span></span>
+
+    <h1>inline-block</h1>
+    <div id='inlineblock'></div>
+
+    <h1>none</h1>
+    <div id="none"></div>
+
+    <h1>You see nothing here</h1>
+    <div id="viz"></div>
+
+</body>
+</html>
