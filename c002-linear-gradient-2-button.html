@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            
+            background: linear-gradient(to bottom right, red, yellow);
+            border-radius: 50px;
+        }
+        div:active {
+            background: linear-gradient(to bottom right, yellow, red);
+        }
+        
+        div:hover {
+            cursor: pointer;
+        }
+        
+        div {
+            animation-name: changecolor;
+            animation-duration: 0.000000000000000000000000000000000000000000000000000000001s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes changecolor {
+            0% {
+                background: linear-gradient(to bottom right, blue, green);
+            }
+            50% {
+                background: linear-greadient(to bottom right, rebeccapurple, #1d0426)
+                
+            }
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+<h2>By div</h2>
+<div></div>
+</body>
+</html> 

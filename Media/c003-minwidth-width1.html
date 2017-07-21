@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 10000px;
+        }
+        
+        .container {
+            width: 500px;
+            height: 200px;
+            border: double blue;
+            background-image: url(Image/cat.jpg);
+            background-repeat: no-repeat;
+            overflow: auto;
+        }
+        
+        #scroll {
+            background-attachment: scroll;
+        }
+        
+        #item {
+            height: 400px;
+        }
+        
+        #local {
+            background-attachment: local;
+        }
+        
+        #fixed {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="scroll">
+        <div id="item"></div>
+    </div>
+
+    <div class="container" id='local'>
+        <div id="item"></div>
+    </div>
+
+    <div class="container" id='fixed'>
+        <div id="item"></div>
+    </div>
+</body>
+
+</html>
