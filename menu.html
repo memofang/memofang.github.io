@@ -2,20 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    
+    <title>Order</title>
+
 </head>
+
 <body>
-   <h1>Order Form</h1> 
-   <form action>
-      <fieldset>
-          <h2>Name</h2>
-          <h3>First Name</h3>
-          <input type="text" name="name">
-          <h3>Last Name</h3>
-          <input type="text" name="name">
-      </fieldset>
-       
-   </form>
+    <h1>Order Form</h1>
+    <form action>
+        <fieldset>
+            <h2>Name</h2>
+            <h3>First Name</h3>
+            <input type="text" name="name">
+            <h3>Last Name</h3>
+            <input type="text" name="name">
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2>Email</h2>
+            <input type="email">
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2>Phone Number</h2>
+            <input type="tel">
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2>Pick your Order</h2>
+            <h4>All orders come with fries and a Coke</h4>
+            <br>
+            <h3>Pizza</h3>
+            <h3>Hot Dog</h3>
+            <h3>Fried Chicken</h3>
+
+            <br>
+            <select name id>
+            <option value="Choice 1">Pizza</option>    
+            <option value="Choice 2">Hot Dog</option>
+            <option value="Choice 3">Fried Chicken</option>                     
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for=""><h2>Payment</h2></label>
+            <input type="radio" name="payment" value="credit">
+            <h3>Credit</h3>
+            <input type="radio" name="payment" value="debit">
+            <h3>Devit</h3>
+            <input type="radio" name="payment" value="Cash">
+        </fieldset>
+        <br>
+        <textarea name="Comments" id="" cols="60" rows="10"></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        
+    </form>
 </body>
 </html>
