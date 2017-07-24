@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            height: 200px;
+        }
+        
+        #container {
+            border: double blue;
+            height: 150px;
+            width: 400px;
+            overflow: hidden;
+            overflow: visible;
+            overflow: scroll;
+            overflow: auto;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 10px
+        }
+        
+        ::-webkit-scroll-thumb
+        {
+            background: lime
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container"><img src="Media/Image/google.jpg" alt="google"></div>
+    
+    <ul>
+        <li>by default overflow is visable</li>
+        <li>overflow scroll always show scrollbar</li>
+        <li>overflow auto show bar when neccessary</li>
+    </ul>
+</body>
+</html>   
