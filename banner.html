@@ -10,16 +10,10 @@
             margin: 0px;
             border: solid;
             text-align: center;
-            height: 100%
         }
         
-        html {
-            /*            100% of viewport */
-            height: 100%;
-            
-        }
-        
-        h1, h3{
+        h1,
+        h3 {
             color: red;
         }
         
@@ -29,13 +23,20 @@
             background-color: black;
             display: inline-block;
             width: 80px;
-            margin: 10px;
+            margin: 20px auto;
         }
         
         * {
-            padding:0;
+            padding: 0;
             margin: 0;
             box-sizing: border-box;
+        }
+        
+        input {
+            height: 30px;
+            width: 300px;
+            border-color: red;
+            text-indent: 5px;
         }
     </style>
 </head>
@@ -45,9 +46,9 @@
     <h1>This is a form</h1>
     <hr>
     <h3>Please fill out this form. It's important.</h3>
-    <form action></form>
+    <form action="#"></form>
     <h2>Email</h2>
     <input type="text" name="email">
-    <button>submit</button>
+    <button><h2>Submit</h2></button>
 </body>
 </html>
