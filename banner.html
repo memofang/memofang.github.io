@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        body {
-            box-sizing: border-box;
-            padding: 0px;
-            margin: 0px;
-            border: solid;
-            text-align: center;
-        }
-        
-        h1,
-        h3 {
-            color: red;
-        }
-        
-        hr {
-            border: none;
-            height: 1px;
-            background-color: black;
-            display: inline-block;
-            width: 80px;
-            margin: 20px auto;
-        }
-        
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        
-        input {
-            height: 30px;
-            width: 300px;
-            border-color: red;
-            text-indent: 5px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			border: solid;
+			text-align: center;
+			height: 100%;
+		}
+		
+		html {
+			/*            100% of viewport */
+			height: 100%;
+		}
+		
+		h1,
+		h3 {
+			color: red;
+		}
+		h1 {
+			margin-top:200px;
+		}
+		
+		h3 {
+			margin-bottom: 10px;
+		}
+		
+		hr {
+			border: none;
+			height: 1px;
+			background-color: black;
+			display: inline-block;
+			width: 80px;
+			margin: 10px;
+		}
+		
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		input {
+			width: 60%;
+			height: 30px;
+			text-indent: 5px;
+		}
+		
+		button {
+			padding: 10px 20px;	
+			border-radius: 10px;
+			background-color: white;
+		}
+	</style>
 </head>
 
 <body>
 
-    <h1>This is a form</h1>
-    <hr>
-    <h3>Please fill out this form. It's important.</h3>
-    <form action="#"></form>
-    <h2>Email</h2>
-    <input type="text" name="email">
-    <button><h2>Submit</h2></button>
+	<h1>This is a form</h1>
+	<hr>
+	<h3>Please fill out this form. It's important.</h3>
+	<form action=''>
+		<input type="text" name="email" placeholder="Email">
+		<button>Submit</button>
+	</form>
 </body>
+
 </html>
