@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://www.google.com/s2/favicons?domain=www.google.com">
+    <title>Google</title>
+    <style>
+        #header {
+            height: 20px;
+            padding-bottom: 171px;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #222;
+        }
+        
+        #gmail {
+            margin-top: 15px;
+            margin-right: 16px;
+            float: right;
+        }
+        
+        #gmail:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        #images {
+            margin-top: 15px;
+            margin-right: 21px;
+            float: right;
+        }
+        
+        #images:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        #gridthing {
+            background-image: url('https://s3.amazonaws.com/images.seroundtable.com/google-home-page-gray-1465304286.png');
+            
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            
+            
+            margin-top: 15px;
+            margin-right: 25px;
+            background-position: 139px -23px;
+            float: right;
+        }
+        
+        #gridthing:hover {
+            background-image: url('http://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+            background-position: -137px -45px;
+            cursor: pointer;
+        }
+        
+        #bellthing {
+            background-image: url('http://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+            
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: rgba(0,0,0,.55);
+            
+            border-radius: 50%;
+            margin-top: 13px;
+            margin-right:19px;
+            background-position: -194px -21px;
+            float: right;
+        }
+        
+        #bellthing:hover {
+            background-color: black;
+            cursor: pointer;
+            
+        }
+        
+        #user {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            
+            border-radius: 50%;
+            margin-top: 7px;
+            margin-right: 21px;
+            float: right;
+            background-image: url('');
+        }
+        
+        #user:hover {
+            cursor: pointer;
+        }
+        
+        #google {
+            margin: auto;
+            
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg');
+            
+            background-size: 100%;
+            height: 92px;
+            width: 272px;
+        }
+        
+        #subtext {
+            color: #4285f4;
+            font: 16px/16px sans-serif;
+            left: 215px;
+            position: relative;
+            top: 76px;
+        }
+		
+		.button {
+			display: inline-block;
+			position: relative;
+			width: 127px;
+			height: 36px;
+            border: 1px solid #f2f2f2;
+			line-height: 35px;
+            border-radius: 2px;
+			background-color: #f2f2f2;
+            background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+			color: #757575;
+			font-size: 13px;
+			font-weight: bold;
+			text-align: center;
+			border: 1px transparent;
+			margin-right: 8px;
+            top: 30px;
+            vertical-align: middle;
+		}
+		
+		.button:hover {
+			background-color: #f5f5f5;
+			color: #222;
+			border: solid 1px #a0a0a0;
+            top: 29px;
+		}
+		
+		#lucky {
+			width: 142px;
+		}
+		
+		
+		#text {
+			height: 44px;
+			width: 500px;
+			position: relative;
+			
+			border: solid 1px #dddddd;
+			font-size: 16px;
+            font-family: sans-serif;
+            color: #222;
+			padding-right: 60px;
+			padding-left: 15px;
+            margin-top: 20px;
+			box-shadow: 1px 2px 1px #dedede;
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg);
+			background-repeat: no-repeat;
+			background-size: 15px;
+			background-position: 540px;
+		}
+		
+		#text:hover {
+			box-shadow: 0px 2px 2px #c4c4c4;
+            cursor: text;
+		}
+		
+		#searchnbuttons {
+            text-align: center;
+		}
+		
+        
+		#fraunsai {
+            position: relative;
+			font-size: small;
+            font-family: sans-serif;
+			text-align: center;
+			color: #222;
+            top: 60px;
+		}
+		
+		#link {
+			text-decoration: none;
+			color: blue;
+			padding-left: 4px
+		}
+		
+		#link:hover {
+			text-decoration: underline;
+		}
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="user"></div>
+        <div id="bellthing"></div>
+        <div id="gridthing"></div>
+        <div id="images">Images</div>
+        <div id="gmail">Gmail</div>
+    </div>
+    <div id="google"><div id="subtext">Canada</div></div>
+
+	<div id="searchnbuttons">
+		<input id="text" type="text" name="searchbar">
+		<br>
+		<button class="button" id="search">Google Search</button>
+		<button class="button" id="lucky">I'm Feeling Lucky</button>
+	</div>
+	<div id="fraunsai">Google.ca offered in: <a id="link" href="">Français</a></div>
+</body>
+</html>
