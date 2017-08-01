@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		#firstitem {
+/*			background-color: blueviolet;*/
+		}
+		
+		.listitem {
+			background-color: blue !important;
+		}
+		
+		[data='tennis'] {
+			background-color: red !important;
+		}
+		
+        ul>li {
+            background-color: pink !important;
+        }
+        
+		li {
+			background-color: lime !important;
+			font-size: 3em;
+		}
+        
+        li:first-child {
+            background-color: darkgreen !important;
+        }
+        
+        
+	</style>
+</head>
+<body>
+	
+	<h2>CSS specificity order</h2>
+	<h3>id > att = class > tag</h3>
+	<h3>inline style > embedded style</h3>
+	<h3>!important > others</h3>
+	<h3>long path > short path</h3>
+	
+	<ul>
+		<li class='listitem' id='firstitem' data='tennis'  data='tennis' style="background-color: green">Tennis</li>
+		<li>Soccer</li>
+		<li>Jogging</li>
+	</ul>
+	
+</body>
+</html>
