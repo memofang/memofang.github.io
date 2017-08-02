@@ -17,7 +17,6 @@
 			position: sticky;
 			background-color: #f8f8f8;
 			text-align: right;
-			background-attachment: fixed;
 			top: 0px;
 			z-index: 1
 		}
@@ -54,10 +53,9 @@
 		
 		#intro {
 			background-image: url(https://blackrockdigital.github.io/startbootstrap-landing-page/img/intro-bg.jpg);
-			width: 100%;
-/*			height: 730px;*/
 			background-size: cover;
-			background-position: 0px -112px
+			background-repeat: no-repeat;
+			padding: 150px;
 		}
 		
 		#title,
@@ -66,14 +64,13 @@
 			font-weight: 600;
 			color: #f8f8f8;
 			text-align: center;
-			padding-top: 223px;
 			text-shadow: 1px 1px 5px black;
 		}
 		
 		#subtitle {
 			font-size: 24px;
 			padding-top: 15px
-		}wwwwwww
+		}
 		
 		#whiteline {
 			margin: auto;
@@ -88,7 +85,6 @@
 		#buttons2 {
 			padding: 21px;
 			text-align: center;
-			vertical-align: middle;
 		}
 		
 		#twitter,
@@ -104,11 +100,10 @@
 			letter-spacing: 2px;
 			display: inline-block;
 			background-color: #f8f8f8;
+			padding: 15px 5px;
 			width: 134px;
 			border-radius: 6px;
-			vertical-align: middle;
 			margin-left: 9px;
-			margin-left: 9px
 		}
 		
 		#twitter:hover,
@@ -124,15 +119,18 @@
 			margin-right: 5px
 		}
 		
+		.left, .right {
+			display: inline-block;
+			vertical-align: top;
+		}
+		
 		.stitle {
-			position: absolute;
 			font-size: 30px;
 			font-weight: 700;
-			color: #333333
+			color: #333333;
 		}
 		
 		.stext {
-			position: absolute;
 			width: 500px;
 			font-size: 19px;
 			color: #333
@@ -173,7 +171,7 @@
 		#ipad {
 			float: right;
 			margin-top: 50px;
-			margin-right: 110px
+			margin-right: 110px;
 		}
 		
 		#s1title {
@@ -182,8 +180,8 @@
 		}
 		
 		#s1text {
-			margin-top: 230px;
-			margin-left: 100px
+			margin-top: 30px;
+			margin-left: 100px;
 		}
 		
 		.lightline {
@@ -225,34 +223,32 @@
 		}
 		
 		#banner {
-			height: 250px;
-			background-image: url(/media/Img/banner-bg.jpg);
+/*			height: 250px;*/
+			background-image: url(img/banner-bg.jpg);
 			background-size: 100%;
-			background-position: 0px -100px
+			background-position: 0px -100px;
+			
+			padding: 50px;
 		}
 		
 		#bannertext {
-			position: absolute;
+/*			position: absolute;*/
 			font-size: 40px;
 			font-weight: 600;
 			color: #f8f8f8;
 			text-shadow: 1px 1px 5px black;
-			margin-top: 110px;
-			margin-left: 100px
-		}
-		
-		#buttons2 {
-			position: absolute;
-			margin-top: 95px;
-			margin-left: 800px
+/*			margin-top: 110px;*/
+/*			margin-left: 100px*/
 		}
 		
 		#footer {
 			height: 100px;
 		}
+		
 		#flinks {
 			margin: 50px 0 0px 80px
 		}
+		
 		#flink {
 			font-weight: bold;
 			color: #337ac6;
@@ -266,16 +262,23 @@
 			text-decoration: underline;
 			color: #25518d
 		}
+		
 		#div {
 			display: inline;
 			font-size: 8px
 		}
+		
 		#copyright {
 			font-weight: bold;
 			color: #777777;
-			font-size:12px;
+			font-size: 12px;
 			margin-left: 86px;
 			margin-top: 15px
+		}
+		
+		#buttons2.right {
+			width: 500px;
+			border: solid red;
 		}
 	</style>
 </head>
@@ -286,9 +289,7 @@
 		<div class="navtext"><a id="navb" href="">About</a></div>
 		<div class="navtext"><a id="navb" href="">Services</a></div>
 		<div class="navtext"><a id="navb" href="">Contact</a>
-			<br>
 		</div>
-		<hr class="lightline">
 	</nav>
 	<div id="intro">
 		<div id="title">Landing Page</div>
@@ -306,34 +307,40 @@
 		</div>
 	</div>
 	<div id="section1">
-		<hr class="grayline" id="gl1">
-		<img id="ipad" src="/media/Img/ipad.png" alt="">
-		<div class="stitle" id="s1title">Death to the Stock Photo: <br> Special Thanks</div>
-		<div class="stext" id="s1text">A special thanks to <a id="slink" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</div>
+		<div class="left">
+			<hr class="grayline" id="gl1">
+			<div class="stitle" id="s1title">Death to the Stock Photo:
+				<br> Special Thanks</div>
+			<div class="stext" id="s1text">A special thanks to <a id="slink" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</div>
+		</div>
+		<div class="right">
+			<img id="ipad" src="img/ipad.png" alt="">
+		</div>
 	</div>
 	<hr class="lightline">
 	<div id="section2">
 		<hr class="grayline" id="gl2">
-		<img id="dog" src="/media/Img/dog.png" alt="">
+		<img id="dog" src="img/dog.png" alt="">
 		<div class="stitle" id="s2title">3D Device Mockups by PSDCovers</div>
 		<div class="stext" id="s2text">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! Visit their website to download some of their awesome, free photoshop actions!</div>
 	</div>
 	<div id="section1">
 		<hr class="grayline" id="gl1">
-		<img id="ipad" src="/media/Img/phones.png" alt="">
-		<div class="stitle" id="s1title">Google Web Fonts and <br> Font Awesome Icons</div>
+		<img id="ipad" src="img/ipad.png" alt="">
+		<div class="stitle" id="s1title">Google Web Fonts and
+			<br> Font Awesome Icons</div>
 		<div class="stext" id="s1text">This template features the 'Lato' font, part of the <a id="slink" href="https://fonts.google.com/">Google Web Font library</a>, as well as <a id="slink" href="http://fontawesome.io/">icons from Font Awesome</a></div>
 	</div>
 	<div id="banner">
-		<div id="bannertext">Connect to Start Bootstrap:</div>
-		<div id="buttons2">
-			<a id="twitter2" href="https://twitter.com/SBootstrap">
+		<div id="bannertext" class='left'>Connect to Start Bootstrap:</div>
+		<div id="buttons2" class='right'>
+			<a id="twitter2" href="#">
 				<i class="fa fa-twitter" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">TWITTER</span></a>
 
-			<a id="github2" href="">
+			<a id="github2" href="#">
 				<i class="fa fa-github" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">GITHUB</span></a>
 
-			<a id="linkedin2" href="">
+			<a id="linkedin2" href="#">
 				<i class="fa fa-linkedin" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">LINKEDIN</span></a>
 		</div>
 	</div>
@@ -350,7 +357,7 @@
 		</div>
 		<div id="copyright">Copyright &copy; Your Company 2014. All Rights Reserved</div>
 	</div>
-	
+
 </body>
 
 </html>
