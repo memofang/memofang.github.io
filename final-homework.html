@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Landing Page - Start Bootstrap Theme</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		* {
+			font-family: Lato;
+			padding: 0;
+			margin: 0
+		}
+		
+		nav {
+			position: sticky;
+			background-color: #f8f8f8;
+			text-align: right;
+			background-attachment: fixed;
+			top: 0px;
+			z-index: 1
+		}
+		
+		#start {
+			float: left;
+			padding-left: 105px;
+		}
+		
+		.navtext {
+			display: inline-block;
+			text-align: right;
+			padding: 16px;
+			color: #777777
+		}
+		
+		.navtext:last-child {
+			padding-right: 105px;
+			padding-left: 7px
+		}
+		
+		#navb,
+		#startt {
+			color: #777777;
+			font-size: 14px;
+			font-weight: 600;
+			text-decoration: none
+		}
+		
+		.navtext,
+		#startt:hover {
+			color: #5e5e5e
+		}
+		
+		#intro {
+			background-image: url(https://blackrockdigital.github.io/startbootstrap-landing-page/img/intro-bg.jpg);
+			width: 100%;
+/*			height: 730px;*/
+			background-size: cover;
+			background-position: 0px -112px
+		}
+		
+		#title,
+		#subtitle {
+			font-size: 70px;
+			font-weight: 600;
+			color: #f8f8f8;
+			text-align: center;
+			padding-top: 223px;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#subtitle {
+			font-size: 24px;
+			padding-top: 15px
+		}wwwwwww
+		
+		#whiteline {
+			margin: auto;
+			border: none;
+			height: 1px;
+			width: 400px;
+			background-color: #f8f8f8;
+			margin-top: 19px
+		}
+		
+		#buttons,
+		#buttons2 {
+			padding: 21px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		#twitter,
+		#twitter2,
+		#github,
+		#github2,
+		#linkedin,
+		#linkedin2 {
+			font-size: 14px;
+			display: inline;
+			color: #333333;
+			text-decoration: none;
+			letter-spacing: 2px;
+			display: inline-block;
+			background-color: #f8f8f8;
+			width: 134px;
+			border-radius: 6px;
+			vertical-align: middle;
+			margin-left: 9px;
+			margin-left: 9px
+		}
+		
+		#twitter:hover,
+		#twitter2:hover,
+		#github:hover,
+		#github2:hover,
+		#linkedin:hover,
+		#linkedin2:hover {
+			background-color: #e6e6e6
+		}
+		
+		i {
+			margin-right: 5px
+		}
+		
+		.stitle {
+			position: absolute;
+			font-size: 30px;
+			font-weight: 700;
+			color: #333333
+		}
+		
+		.stext {
+			position: absolute;
+			width: 500px;
+			font-size: 19px;
+			color: #333
+		}
+		
+		#slink {
+			color: #337ac6;
+			text-decoration: none
+		}
+		
+		#slink:hover {
+			text-decoration: underline;
+			color: #25518d
+		}
+		
+		.grayline {
+			border: none;
+			height: 3px;
+			width: 210px;
+			background-color: #e7e7e7
+		}
+		
+		#gl1 {
+			position: absolute;
+			margin-top: 70px;
+			margin-left: 100px
+		}
+		
+		#section1 {
+			height: 455px;
+			background-color: #f8f8f8;
+		}
+		
+		img {
+			height: 355px;
+		}
+		
+		#ipad {
+			float: right;
+			margin-top: 50px;
+			margin-right: 110px
+		}
+		
+		#s1title {
+			margin-top: 110px;
+			margin-left: 100px
+		}
+		
+		#s1text {
+			margin-top: 230px;
+			margin-left: 100px
+		}
+		
+		.lightline {
+			border: none;
+			height: 1px;
+			background-color: #e7e7e7;
+			width: 100%
+		}
+		
+		#section2 {
+			height: 450px;
+			background-color: #ffffff;
+		}
+		
+		#dog {
+			margin-top: 50px;
+			margin-left: 110px;
+		}
+		
+		#gl2 {
+			position: absolute;
+			margin-top: 70px;
+			right: 350px
+		}
+		
+		#s2title {
+			position: static;
+			margin-top: 110px;
+			float: right;
+			width: 400px;
+			margin-right: 160px
+		}
+		
+		#s2text {
+			position: static;
+			float: right;
+			margin-top: -180px;
+			margin-right: 60px
+		}
+		
+		#banner {
+			height: 250px;
+			background-image: url(/media/Img/banner-bg.jpg);
+			background-size: 100%;
+			background-position: 0px -100px
+		}
+		
+		#bannertext {
+			position: absolute;
+			font-size: 40px;
+			font-weight: 600;
+			color: #f8f8f8;
+			text-shadow: 1px 1px 5px black;
+			margin-top: 110px;
+			margin-left: 100px
+		}
+		
+		#buttons2 {
+			position: absolute;
+			margin-top: 95px;
+			margin-left: 800px
+		}
+		
+		#footer {
+			height: 100px;
+		}
+		#flinks {
+			margin: 50px 0 0px 80px
+		}
+		#flink {
+			font-weight: bold;
+			color: #337ac6;
+			display: inline;
+			text-decoration: none;
+			margin: 10px;
+			font-size: 14px
+		}
+		
+		#flink:hover {
+			text-decoration: underline;
+			color: #25518d
+		}
+		#div {
+			display: inline;
+			font-size: 8px
+		}
+		#copyright {
+			font-weight: bold;
+			color: #777777;
+			font-size:12px;
+			margin-left: 86px;
+			margin-top: 15px
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div id="start" class="navtext"><a href="" id="startt">Start Bootstrap</a></div>
+		<div class="navtext"><a id="navb" href="">About</a></div>
+		<div class="navtext"><a id="navb" href="">Services</a></div>
+		<div class="navtext"><a id="navb" href="">Contact</a>
+			<br>
+		</div>
+		<hr class="lightline">
+	</nav>
+	<div id="intro">
+		<div id="title">Landing Page</div>
+		<div id="subtitle">A Template by Start Bootstrap</div>
+		<hr id="whiteline">
+		<div id="buttons">
+			<a id="twitter" href="https://twitter.com/SBootstrap">
+				<i class="fa fa-twitter" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">TWITTER</span></a>
+
+			<a id="github" href="">
+				<i class="fa fa-github" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">GITHUB</span></a>
+
+			<a id="linkedin" href="">
+				<i class="fa fa-linkedin" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">LINKEDIN</span></a>
+		</div>
+	</div>
+	<div id="section1">
+		<hr class="grayline" id="gl1">
+		<img id="ipad" src="/media/Img/ipad.png" alt="">
+		<div class="stitle" id="s1title">Death to the Stock Photo: <br> Special Thanks</div>
+		<div class="stext" id="s1text">A special thanks to <a id="slink" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</div>
+	</div>
+	<hr class="lightline">
+	<div id="section2">
+		<hr class="grayline" id="gl2">
+		<img id="dog" src="/media/Img/dog.png" alt="">
+		<div class="stitle" id="s2title">3D Device Mockups by PSDCovers</div>
+		<div class="stext" id="s2text">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! Visit their website to download some of their awesome, free photoshop actions!</div>
+	</div>
+	<div id="section1">
+		<hr class="grayline" id="gl1">
+		<img id="ipad" src="/media/Img/phones.png" alt="">
+		<div class="stitle" id="s1title">Google Web Fonts and <br> Font Awesome Icons</div>
+		<div class="stext" id="s1text">This template features the 'Lato' font, part of the <a id="slink" href="https://fonts.google.com/">Google Web Font library</a>, as well as <a id="slink" href="http://fontawesome.io/">icons from Font Awesome</a></div>
+	</div>
+	<div id="banner">
+		<div id="bannertext">Connect to Start Bootstrap:</div>
+		<div id="buttons2">
+			<a id="twitter2" href="https://twitter.com/SBootstrap">
+				<i class="fa fa-twitter" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">TWITTER</span></a>
+
+			<a id="github2" href="">
+				<i class="fa fa-github" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">GITHUB</span></a>
+
+			<a id="linkedin2" href="">
+				<i class="fa fa-linkedin" aria-hidden="true" style="font-size: 18px"></i><span id="btnspac">LINKEDIN</span></a>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="flinks">
+			<a id="flink" href="">Home</a>
+			<li id="div">&#8226;</li>
+			<a id="flink" href="">About</a>
+			<li id="div">&#8226;</li>
+			<a id="flink" href="">Services</a>
+			<li id="div">&#8226;</li>
+			<a id="flink" href="">Contact</a>
+		</div>
+		<div id="copyright">Copyright &copy; Your Company 2014. All Rights Reserved</div>
+	</div>
+	
+</body>
+
+</html>
